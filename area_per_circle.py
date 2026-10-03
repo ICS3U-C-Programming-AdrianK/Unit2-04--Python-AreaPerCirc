@@ -9,18 +9,18 @@ import math
 
 def main():
     # get radius from the user.
-    radius = 8
+    radius = int(input("Enter the radius of the circle(inches):"))
 
     # calculate the circumference of the circle
     circumference = math.pi * 2 * radius
 
     # calculate the area of the circle
-    Area = math.pi * radius**2
+    Area = math.pi * radius ** 2
 
     # Display circumference and area of a circle
     print("")
-    print("circumference ={}m".format(circumference))
-    print("Area = {}m²".format(Area))
+    print("circumference ={:,.2f}m".format(circumference))
+    print("Area = {:,.2f}m²".format(Area))
 
 
 if __name__ == "__main__":
